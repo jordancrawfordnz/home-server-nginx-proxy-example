@@ -1,0 +1,12 @@
+listen       443;
+ssl on;
+
+# From: https://hynek.me/articles/hardening-your-web-servers-ssl-ciphers/
+ssl_prefer_server_ciphers On;
+ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
+ssl_ciphers 'EECDH+AESGCM:EDH+AESGCM:AES256+EECDH:AES256+EDH';
+
+# Enable session resumption to improve https performance, from:
+    # http://vincent.bernat.im/en/blog/2011-ssl-session-reuse-rfc5077.html
+ssl_session_cache shared:SSL:50m;
+ssl_session_timeout 5m;

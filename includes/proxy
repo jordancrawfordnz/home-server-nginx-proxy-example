@@ -1,0 +1,12 @@
+# Required for Websockets
+proxy_http_version 1.1;
+proxy_set_header        Upgrade         $http_upgrade;
+proxy_set_header Connection "upgrade";
+proxy_read_timeout      36000s;         # Timeout after 10 hours
+
+# Allow the remote server to identify hosts.
+proxy_set_header Host $host;
+
+# Don’t limit upload file size.
+client_max_body_size 0;
+

@@ -1,0 +1,5 @@
+location /.well-known/ {
+	root /letsencrypt-challenge/;
+	auth_basic off;
+	try_files $uri =404;
+}
