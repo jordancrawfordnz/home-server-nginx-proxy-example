@@ -1,5 +1,5 @@
 # Home Server NGINX Proxy Example
-This repo contains an example NGINX config and Dockerfile similar to the one which I used in my [home server without portforwarding](https://jordancrawford.kiwi/home-server-without-portforward/) article.
+This repo contains an example NGINX config and Dockerfile similar to the one which I used in my [home server without portforwarding](https://jc.kiwi/home-server-without-portforward/) article.
 
 This is intended to be used on a public server which can proxy web requests to your home server via a VPN link, as I discuss in my article.
 
